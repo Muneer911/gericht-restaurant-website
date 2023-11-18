@@ -11,9 +11,9 @@ import {
   Laurels,
   SpecialMenu,
 } from "./container";
-import { Navbar } from "./components";
+
 import "./App.css";
-import { Routes, Route } from "react-router";
+
 
 const App = () => (
   <div>
