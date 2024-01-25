@@ -1,6 +1,3 @@
-/* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
 body {
   height: 1000px;
   background: #f0faff;
@@ -15,10 +12,24 @@ body {
   margin: auto;
   border-radius: 12px;
   padding: 20px 30px 120px;
-  background: #1f232d;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background: #1e1d1b;
+  box-shadow: 0 5px 10px rgba(31, 27, 27, 0.1);
   overflow: hidden;
 }
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+.form a {
+  color: #333;
+  text-decoration: none;
+}
+.form a:hover {
+  text-decoration: underline;
+}
+
 .form.login {
   position: absolute;
   left: 50%;
@@ -28,14 +39,28 @@ body {
   padding: 20px 140px;
   border-radius: 48%;
   height: 100%;
-  background: #fff;
+  background: #ffffff;
   transition: all 0.6s ease;
 }
+
+.form input {
+  height: 50px;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 30px;
+  color: #ffffff;
+  background: #00000049;
+}
+
 .wrapper.active .form.login {
-  bottom: -8%;
+  bottom: -9%;
   border-radius: 30%;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
 }
+
 .form header {
   font-size: 30px;
   text-align: center;
@@ -44,68 +69,57 @@ body {
   cursor: pointer;
 }
 
-.NUMD{
-    display: flex;
-    justify-content: space-between;
+.NUMD {
+  display: flex;
+  justify-content: space-between;
 }
 
 .form.login header {
   color: #333;
   opacity: 0.6;
 }
+
 .wrapper.active .form.login header {
   opacity: 1;
 }
 .wrapper.active .signup header {
-  opacity: 0.6;
+  opacity: 0.5;
 }
-.wrapper form {
+.gender-box {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-top: 40px;
-}
-.gender-box{
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    justify-content: center;
-    align-items: center;
-    border-radius: 13px;
+  gap: 10px;
+  background: #6965657a;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
 }
 
+.gender-option {
+  display: flex;
+  gap: 10px;
+}
+.gender {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin: 5px;
+  gap: 10px;
+  justify-content: space-between;
+}
+.gender label,
+.gender-box h3 {
+  font-size: large;
+  color: #ffffff;
+}
+.gender-box h3 {
+  background-color: #050505;
+  padding: 10px;
+  border-radius: 10px;
+}
 
-.gender-option{
-    display: flex;
-    margin: 5px;
-}
-.gender{
-
-    display: flex;
-    align-items: center;
-    width: auto;
-    margin: 5px;
-    gap: 10px;
-    justify-content: space-between;
-}
-.gender label,.gender-box h3{
-    font-size: large;
-    color: #000000;
-}
-.gender-box h3{
-    background-color: #b6b6b6;
-    padding: 10px;
-    border-radius: 10px;
-}
-form input {
-  height: 60px;
-  outline: none;
-  border: none;
-  padding: 0 15px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #333;
-  border-radius: 8px;
-  background: #fff;
+.form.login input {
+  background: #ffffff;
+  color: black;
 }
 .form.login input {
   border: 1px solid #aaa;
@@ -113,6 +127,7 @@ form input {
 .form.login input:focus {
   box-shadow: 0 1px 0 #ddd;
 }
+
 form .checkbox {
   display: flex;
   align-items: center;
@@ -126,15 +141,9 @@ form .checkbox {
 }
 form .checkbox label {
   cursor: pointer;
-  color: #fff;
+  color: #ffffff;
 }
-form a {
-  color: #333;
-  text-decoration: none;
-}
-form a:hover {
-  text-decoration: underline;
-}
+
 form input[type="submit"] {
   margin-top: 15px;
   padding: none;
@@ -142,8 +151,16 @@ form input[type="submit"] {
   font-weight: 500;
   cursor: pointer;
 }
-.form.login input[type="submit"] {
+.form.login [type="submit"] {
   background: #4070f4;
   color: #fff;
   border: none;
+}
+.form.signup [type="submit"] {
+  background: #4070f4;
+  color: #fff;
+  border: none;
+  height: 45px;
+  border-radius: 20px;
+  margin-top: 1em;
 }
