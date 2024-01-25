@@ -22,13 +22,13 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li className="p__opensans">
-          <a href="#about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li className="p__opensans">
-          <a href="#menu">Menu</a>
+          <Link to="/menu">Menu</Link>
         </li>
         <li className="p__opensans">
-          <a href="#award">Award</a>
+          <Link to="/laurels">Award</Link>
         </li>
       </ul>
 
