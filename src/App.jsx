@@ -14,20 +14,17 @@ import {
 
 import "./App.css";
 
-
 const App = () => (
   <div>
-      <Header />
-      <AboutUs />
-      <SpecialMenu />
-      <Chef />
-      <Intro />
-      <Laurels />
-      <Gallery />
-      <FindUs />
-      <Footer />
-      </div>
-
+    <Header />
+    <AboutUs />
+    <SpecialMenu />
+    <Chef />
+    <Intro />
+    <Laurels />
+    <Gallery />
+    <FindUs />
+  </div>
 );
 
 export default App;
