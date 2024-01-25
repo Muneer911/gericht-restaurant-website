@@ -13,8 +13,7 @@ const Navbar = () => {
     <div className="app__navbar">
       <div className="app__navbar-logo">
         <Link to="/">
-        
-        <img src={images.gericht} alt="app logo" />
+          <img src={images.gericht} alt="app logo" />
         </Link>
       </div>
 
@@ -31,18 +30,17 @@ const Navbar = () => {
         <li className="p__opensans">
           <a href="#award">Award</a>
         </li>
-        
       </ul>
 
       <div className="app__navbar-login">
-        <Link to="/Register "className="p__opensans">
-          Log In / Register
+        <Link to="/Register " className="p__opensans">
+          <a href="">Log In / Register</a>
         </Link>
-        
+
         <div />
-        <a href="/" className="p__opensans">
-          Book table
-        </a>
+        <Link to="/Register " className="p__opensans">
+          <a href=""> Book table</a>
+        </Link>
       </div>
 
       <div className="app__navbar-smallscreen">
@@ -53,7 +51,12 @@ const Navbar = () => {
         />
 
         {toggleMenu && (
-          <div className="app__navbar-smallscreen_overlay flex__center slide-bottom" onClick={()=>{setToggleMenu(false)}}>
+          <div
+            className="app__navbar-smallscreen_overlay flex__center slide-bottom"
+            onClick={() => {
+              setToggleMenu(false);
+            }}
+          >
             <MdOutlineRestaurantMenu
               fontSize={27}
               className="overlay__close"
@@ -72,21 +75,15 @@ const Navbar = () => {
               <li className="p__opensans">
                 <a href="#award">Award</a>
               </li>
-              
-              
+
               <li className="p__opensans">
-              <Link to="/Register">
-                Log In / register
-              </Link>
+                <Link to="/Register">Log In / register</Link>
               </li>
             </ul>
-           
           </div>
         )}
       </div>
-      
     </div>
-    
   );
 };
 
