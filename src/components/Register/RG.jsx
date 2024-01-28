@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./RG.css";
-import {} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function RG() {
   const [isContainerActive, setIsContainerActive] = useState();
@@ -62,7 +62,7 @@ function RG() {
         <form action="#">
           <input type="text" placeholder="Email address" required />
           <input type="password" placeholder="Password" required />
-          <a href="#">Forgot password?</a>
+          <Link to="/ForgetPassword">Forgot password?</Link>
           <input type="submit" value="Login" />
         </form>
       </div>
