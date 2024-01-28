@@ -54,7 +54,11 @@ body {
   color: #ffffff;
   background: #00000049;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .wrapper.active .form.login {
   bottom: -9%;
   border-radius: 30%;
