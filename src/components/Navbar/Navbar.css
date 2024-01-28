@@ -36,6 +36,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  color: #fff;
 }
 .app__navbar-login a {
   margin: 0 1rem;
@@ -64,7 +65,6 @@
   transition: 0, 5s ease;
   flex-direction: column;
   z-index: 5;
-  
 }
 .app__navbar-smallscreen_overlay .overlay__close {
   font-size: 27px;
@@ -114,5 +114,4 @@
   .app__navbar-logo img {
     width: 110px;
   }
-
 }
